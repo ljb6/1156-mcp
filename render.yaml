@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: 1156-mcp
+    runtime: python
+    buildCommand: pip install uv && uv sync
+    startCommand: uv run python src/server.py
